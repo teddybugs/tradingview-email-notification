@@ -9,6 +9,9 @@
 	$pair = $obj->pair;
 	$msgg = $obj->message;	
 
+	if ($pair == null && $msgg == null) {
+		die('Invalid Json');
+	} else {
 	$to      = 'your-own@email.com';
 	$subject = 'Tradingview Alert for Pair:'.$pair;
 	$message = $msgg;
@@ -16,4 +19,6 @@
                  'X-Mailer: PHP/' . phpversion();
 
 	mail($to, $subject, $message, $headers);
+	echo "Success";
+	}
 ?>
