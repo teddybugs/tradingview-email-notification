@@ -1,4 +1,4 @@
-#  Email Notification for Webhook
+#  Email Notification for TradingView Webhook
 
 **How to use:**
 
