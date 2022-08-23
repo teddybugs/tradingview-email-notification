@@ -9,11 +9,11 @@
 	$pair = $obj->pair;
 	$msgg = $obj->message;	
 
-    $to      = 'your-own@email.com';
-    $subject = 'Tradingview Alert for Pair:'.$pair;
-    $message = $msgg;
-    $headers = 'From: your-other-email@email.com'       . "\r\n" .
+	$to      = 'your-own@email.com';
+	$subject = 'Tradingview Alert for Pair:'.$pair;
+	$message = $msgg;
+	$headers = 'From: your-other-email@email.com'       . "\r\n" .
                  'X-Mailer: PHP/' . phpversion();
 
-    mail($to, $subject, $message, $headers);
+	mail($to, $subject, $message, $headers);
 ?>
